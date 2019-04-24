@@ -59,7 +59,7 @@ Caso positivo, clicar com o botão direito na mensagem->*Quick Fix*->*Mark the a
 
 ### Inicialização/Gravação de dados
 Ao iniciar a aplicação quatro registros(veículos) são inseridos automaticamente.
-Os dados atualizados são salvos no arquivo texto:
+Os dados atualizados são salvos no arquivo texto seguinte a cada operação de criação, atualização ou remoção:
 
 * C:\temp\infosistemas.txt
 
