@@ -22,6 +22,7 @@ Back-end criado para sistema de cadastro de carros
 $ git clone https://git@github.com:americanolinhares/locadora-backend.git
 $ cd locadora-backend
 ```
+
 1. Dentro do Eclipse com a perspectiva **Java EE** ir em *File*->*Import*->*Maven*->*Existing Maven Projects*->*Next*;
 2. Em *Root Directory* selecionar a pasta com o projeto baixado e depois *Finish*;
 3. Clicar com o botão direito na pasta do projeto->*Run as*->*Maven Install*;
@@ -48,14 +49,21 @@ Se ao tentar subir o servidor Tomcat ocorrer o erro:
 
 ```
 Servlet [jersey] in web application [/locadora] threw load() exception java.lang.ClassNotFoundException: com.sun.jersey.spi.container.servlet.ServletContainer...
-
 ```
  verificar se na view *Markes* é exibida a mensagem:
- 
+
  ```
 Classpath entry org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER will not be exported or published. Runtime ClassNotFoundExceptions may result
  ```
 Caso positivo, clicar com o botão direito na mensagem->*Quick Fix*->*Mark the associated raw classpath entry as a publish/export dependency*->*Finish*. Depois repetir os passos para a execução da aplicação.
+
+### Inicialização/Gravação de dados
+Ao iniciar a aplicação quatro registros(veículos) são inseridos automaticamente.
+Os dados atualizados são salvos no arquivo texto:
+
+* C:\temp\infosistemas.txt
+
+
 
 ### Testes (Postman)
 ![postman-test](https://i.ibb.co/z6RpqbC/backend.png)
